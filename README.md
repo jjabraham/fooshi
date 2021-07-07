@@ -1,2 +1,2 @@
 # fooshi
-shopping cart experiment
+Typescript node project setup
