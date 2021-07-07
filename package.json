@@ -1,0 +1,37 @@
+{
+  "name": "fooshi",
+  "version": "1.0.0",
+  "description": "Typescript node project setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "prepare": "husky install",
+    "start": "npm run build && node build/index.js",
+    "start:dev": "tsnd --transpile-only --ignore-watch node_modules src/index.ts",
+    "build": "rimraf ./build && tsc",
+    "lint": "eslint --ext .ts --debug && npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjabraham/fooshi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjabraham/fooshi/issues"
+  },
+  "homepage": "https://github.com/jjabraham/fooshi#readme",
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.0",
+    "prettier": "2.3.2",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  }
+}
