@@ -9,7 +9,7 @@
     "start": "npm run build && node build/index.js",
     "start:dev": "tsnd --transpile-only --ignore-watch node_modules src/index.ts",
     "build": "rimraf ./build && tsc",
-    "lint": "eslint --ext .ts --debug && npx prettier --write ."
+    "lint": "eslint --ext .ts --debug && npx prettier --write --no-error-on-unmatched-pattern src/"
   },
   "repository": {
     "type": "git",
